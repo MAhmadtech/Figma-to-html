@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Screen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Proxima Nova Regular";
+        src: url("fonts/Fontspring-DEMO-proximanova-regular.otf")
+          format("opentype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Proxima Nova";
+        src: url("fonts/Fontspring-DEMO-proximanova-medium.otf")
+          format("opentype");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      /* @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap"); */
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fbfbfb; /* for contrast */
+        font-family: "Lexend", sans-serif;
+        font-style: normal;
+        font-optical-sizing: auto;
+        overflow: hidden;
+      }
+
+      .main-screen {
+        /* Main Screen */
+
+        position: relative;
+        width: 1440px;
+        height: 944px;
+
+        /* Bg */
+        background: #fbfbfb;
+        /* border-radius: 32px; */
+      }
+
+      #logo {
+        position: absolute;
+        width: 143.63px;
+        height: 125px;
+        left: 67px;
+        top: 60px;
+      }
+
+      .tagline {
+        position: absolute;
+        width: 693px;
+        height: 156px;
+        left: calc(50% - 693px / 2 - 306.5px);
+        top: 342px;
+
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 52px;
+        color: #005666;
+
+        /* display: flex; */
+        align-items: center;
+      }
+      #signin {
+        /* Large Buttons */
+
+        /* Large Buttons */
+
+        position: absolute;
+        width: 343px;
+        height: 52px;
+        left: calc(50% - 343px / 2 - 481.5px);
+        bottom: 352px;
+
+        /* Rectangle 2446 */
+
+        box-sizing: border-box;
+
+        /* position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%; */
+
+        /* accent */
+        border: 1px solid #ff765b;
+        /* medium_shadow */
+        filter: drop-shadow(0px 8px 16px rgba(133, 133, 133, 0.12));
+        border-radius: 100px;
+
+        /* LET ME KNOW */
+
+        /* position: absolute;
+        left: 24.2%;
+        right: 23.91%;
+        top: 29.17%;
+        bottom: 24.68%; */
+
+        /* body_1_semiBold */
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        text-align: center;
+        background: #fbfbfb;
+
+        /* accent */
+        color: #ff765b;
+      }
+      #register {
+        /* Large Buttons */
+
+        position: absolute;
+        width: 343px;
+        height: 52px;
+        left: calc(50% - 343px / 2 - 481.5px);
+        bottom: 284px;
+
+        /* Rectangle 2446 */
+
+        /* position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%; */
+
+        background: #ff765b;
+        /* medium_shadow */
+        box-shadow: 0px 8px 16px rgba(133, 133, 133, 0.12);
+        border-radius: 100px;
+
+        /* LET ME KNOW */
+
+        /* position: absolute;
+        left: 15.74%;
+        right: 15.45%;
+        top: 26.92%;
+        bottom: 26.92%; */
+
+        /* body_1_semiBold */
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+        text-align: center;
+
+        /* white */
+        color: #ffffff;
+        border-color: #ff765b;
+      }
+      #MainMobile {
+        /* 1 */
+
+        position: absolute;
+        width: 470px;
+        height: 748px;
+        left: 797px;
+        top: 31px;
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 0%;
+      }
+      #FrontMobile {
+        /* 4 */
+
+        /* 4 */
+
+        position: absolute;
+        width: 1058px;
+        height: 778px;
+        left: 410px;
+        top: 1px;
+
+        background: url(4.png);
+        transform: rotate(0deg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border-radius: 0%;
+        border-color: #fbfbfb;
+      }
+      .language-selector {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 8px 12px;
+        gap: 8px;
+
+        position: absolute;
+        width: 131px;
+        height: 40px;
+        left: 1265px;
+        top: 50px;
+
+        background: #003640;
+        border-radius: 100px;
+      }
+
+      .language-icon,
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        padding: 6px;
+      }
+
+      .language-text {
+        width: 51px;
+        height: 20px;
+        font-family: "Proxima Nova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: #ffffff;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+      }
+
+      .arrow-icon {
+        width: 16px;
+        height: 16px;
+        order: 2;
+      }
+
+      /* Optional icon styling (if using borders or SVGs with strokes) */
+      .language-icon svg,
+      .arrow-icon svg {
+        width: 100%;
+        height: 100%;
+        stroke: #ffffff;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-screen">
+      <img id="logo" src="Logo.png" alt="Logo" />
+
+      <div class="tagline">
+        This app helps you unmask manipulation. Copy paste your text and we’ll
+        get the tea ready.
+      </div>
+      <button id="signin">SIGN IN</button>
+      <button id="register">REGISTER</button>
+      <div id="MainMobile">
+        <img
+          src="1.png"
+          style="width: 100%; height: 100%; object-fit: contain"
+        />
+      </div>
+
+      <div id="FrontMobile"></div>
+      <div class="language-selector">
+        <div class="language-icon">
+          <!-- Replace this with your actual SVG or icon image -->
+          <img src="Language.svg" alt="Language" />
+        </div>
+        <div class="language-text">English</div>
+        <div class="arrow-icon">
+          <!-- Replace this with your actual down arrow SVG or icon -->
+          <img src="Arrow down.svg" alt="Dropdown" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
