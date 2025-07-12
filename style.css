@@ -1,0 +1,287 @@
+@font-face {
+    font-family: "Proxima Nova Regular";
+    src: url("fonts/Fontspring-DEMO-proximanova-regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("fonts/Fontspring-DEMO-proximanova-medium.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fbfbfb;
+    font-family: "Lexend", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    overflow: hidden;
+}
+
+.main-screen {
+    position: relative;
+    width: 105%;
+    min-height: 100vh;
+    background: #fbfbfb;
+    padding: 3% 5%;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    max-width: 143.63px;
+    height: auto;
+    left: 5%;
+    top: 5%;
+}
+
+/* New container for text content */
+.text-container {
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    width: 48%;
+    max-width: 693px;
+}
+
+.tagline {
+    font-weight: 500;
+    font-size: 2.9vw;
+    line-height: 1.25;
+    color: #005666;
+    margin-bottom: 30px;
+}
+
+#signin {
+    width: 100%;
+    max-width: 343px;
+    height: 52px;
+    box-sizing: border-box;
+    border: 1px solid #ff765b;
+    filter: drop-shadow(0px 8px 16px rgba(133, 133, 133, 0.12));
+    border-radius: 100px;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    background: #fbfbfb;
+    color: #ff765b;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#register {
+    width: 100%;
+    max-width: 346px;
+    height: 52px;
+    background: #ff765b;
+    box-shadow: 0px 8px 16px rgba(133, 133, 133, 0.12);
+    border-radius: 100px;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* image styling */
+.phone-container {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    z-index: 1;
+}
+
+#MainMobile {
+    width: 73%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#FrontMobile {
+    position: absolute;
+    width: 157%;
+    height: auto;
+    right: -2%;
+    top: 24%;
+    transform: rotate(5deg);
+    z-index: 2;
+    pointer-events: none;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+/* language selector */
+.language-selector {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    gap: 8px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: #003640;
+    border-radius: 100px;
+    min-width: 120px;
+    box-sizing: border-box;
+}
+
+.language-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-text {
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-icon img,
+.arrow-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+    .tagline {
+        font-size: 2.5vw;
+    }
+
+    .phone-container {
+        width: 45%;
+    }
+
+    #FrontMobile {
+        width: 153%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .tagline {
+        font-size: 3vw;
+    }
+
+    .text-container {
+        width: 55%;
+    }
+
+    .phone-container {
+        width: 50%;
+        top: 15%;
+    }
+
+    #FrontMobile {
+        transform: rotate(-6deg);
+        right: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 15%;
+    }
+
+    .text-container {
+        position: static;
+        width: 90%;
+        margin: 25% auto 0;
+    }
+
+    .tagline {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #signin,
+    #register {
+        margin: 15px auto;
+        display: block;
+    }
+
+    .phone-container {
+        position: relative;
+        width: 43%;
+        margin: 40px auto;
+        right: -4%;
+        top: auto;
+    }
+
+    #FrontMobile {
+        width: 186%;
+        right: 0%;
+        top: 13%;
+        transform: rotate(-5deg);
+    }
+
+    .language-selector {
+        padding: 5px 10px;
+        min-width: 110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        width: 25%;
+        top: 3%;
+    }
+
+    .tagline {
+        font-size: 5.5vw;
+        margin-top: 0;
+    }
+
+    #signin,
+    #register {
+        width: 100%;
+        height: 45px;
+    }
+
+    .phone-container {
+        width: 56%;
+    }
+
+    #FrontMobile {
+        width: 181%;
+        right: -9%;
+        transform: rotate(-1deg);
+    }
+
+    .language-selector {
+        min-width: 100px;
+        padding: 4px 8px;
+    }
+
+    .language-text {
+        font-size: 12px;
+    }
+}
